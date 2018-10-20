@@ -100,6 +100,43 @@ class ViewController: UIViewController {
         }
         self.present(throwawayAlert, animated: true, completion: nil)
     }
+    
+    @IBAction func reset() {
+        
+    }
+    
+    func adjustexistballs() {
+        let adjustAlert = UIAlertController(title: "変更", message: "使用中ボール数を変更しますか？", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "はい", style: .default) { (action: UIAlertAction) in
+            
+        }
+        adjustAlert.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        adjustAlert.addAction(cancelAction)
+        self.present(adjustAlert, animated: true, completion: nil)
+    }
+    
+    func adjustlostballs() {
+        let adjustAlert = UIAlertController(title: "変更", message: "ロストボール数を変更しますか？", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "はい", style: .default) { (action: UIAlertAction) in
+            
+        }
+        adjustAlert.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        adjustAlert.addAction(cancelAction)
+        self.present(adjustAlert, animated: true, completion: nil)
+    }
+    
+    func adjustunopenballs() {
+        let adjustAlert = UIAlertController(title: "変更", message: "未開封ボール数を変更しますか？", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "はい", style: .default) { (action: UIAlertAction) in
+            
+        }
+        adjustAlert.addAction(okAction)
+        let cancelAction = UIAlertAction(title: "キャンセル", style: .cancel, handler: nil)
+        adjustAlert.addAction(cancelAction)
+        self.present(adjustAlert, animated: true, completion: nil)
+    }
 
 
 }
